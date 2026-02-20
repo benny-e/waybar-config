@@ -77,10 +77,9 @@ case "$CHOICE" in
     ;;
   \ *)
     VPN_NAME="${CHOICE#* }"
-    VPN_NAME="${VPN_NAME% (Connected)}"   # strip suffix if present
+    VPN_NAME="${VPN_NAME% (Connected)}"   
 
    if nmcli -w 20 con up id "$VPN_NAME"; then
-  # give NM a moment and verify it's actually activated
   sleep 1
   state="$(nmcli -g GENERAL.STATE con show id "$VPN_NAME" 2>/dev/null || true)"
   if [[ "$state" == "activated" ]]; then
