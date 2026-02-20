@@ -1,0 +1,13 @@
+{
+  "cpu": {
+    "format": "{icon} {usage}",
+    "format-icons": "<span rise='1200' size = '11000'>󰍛</span>",
+    "states": {
+	    "warning": 75,
+	    "critical": 90
+    },
+
+
+  }
+}
+

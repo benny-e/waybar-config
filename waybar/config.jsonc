@@ -1,0 +1,67 @@
+// benny's waybar config (modular)
+
+{
+  "include": [
+    "~/.config/waybar/modules/hypr/window.jsonc",
+    "~/.config/waybar/modules/custom/arch.jsonc",
+    "~/.config/waybar/modules/custom/browser.jsonc",
+    "~/.config/waybar/modules/custom/fileman.jsonc",
+    "~/.config/waybar/modules/custom/terminal.jsonc",
+    "~/.config/waybar/modules/custom/virtmanager.jsonc",
+    "~/.config/waybar/modules/custom/nvim.jsonc",
+    "~/.config/waybar/modules/custom/spacers.jsonc",
+    "~/.config/waybar/modules/bluetooth.jsonc",
+    "~/.config/waybar/modules/custom/vpn.jsonc",
+    "~/.config/waybar/modules/audio.jsonc",
+    "~/.config/waybar/modules/backlight.jsonc",
+    "~/.config/waybar/modules/battery.jsonc",
+    "~/.config/waybar/modules/clock.jsonc",
+    "~/.config/waybar/modules/cpu.jsonc",
+    "~/.config/waybar/modules/idle_inhibitor.jsonc",
+    "~/.config/waybar/modules/memory.jsonc",
+    "~/.config/waybar/modules/network.jsonc",
+    "~/.config/waybar/modules/temperature.jsonc",
+    "~/.config/waybar/modules/tray.jsonc"
+  ],
+
+  "position": "top",
+
+  "modules-left": [
+    "custom/arch",
+    "hyprland/workspaces",
+    "custom/nvim",
+    "custom/browser",
+    "custom/fileman",
+    "custom/terminal",
+    "custom/virtmanager"
+  ],
+
+  "modules-center": [
+    "hyprland/window"
+  ],
+
+  "modules-right": [
+    "custom/leftend",
+    "idle_inhibitor",
+    "tray",
+    "custom/spacer",
+    "pulseaudio",
+    "custom/spacer",
+    "bluetooth",
+    "custom/spacer",
+    "custom/vpn",
+    "custom/spacer",
+    "network",
+    "custom/spacer",
+    "memory",
+    "custom/spacer",
+    "cpu",
+    "custom/spacer",
+    "temperature",
+    "custom/spacer",
+    "battery",
+    "custom/rightend",
+    "clock"
+  ]
+}
+

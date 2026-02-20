@@ -1,0 +1,20 @@
+{
+  "custom/spacer": {
+    "format": " ",
+    "tooltip": false
+  },
+
+
+
+  "custom/rightend": {
+     "format": " ",
+     "tooltip": false
+  },
+
+
+
+  "custom/leftend": {
+     "format": " ",
+     "tooltip": false
+  }
+}

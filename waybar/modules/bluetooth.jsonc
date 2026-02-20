@@ -1,0 +1,17 @@
+{
+  "bluetooth": {
+    "on-click": "~/.config/scripts/bluetooth.sh",
+
+    "format": "{icon}",
+    "format-icons": {
+      "disabled": "󰂲",  
+      "off":      "󰂲",   
+      "on":       "󰂯",   
+      "connected":"󰂱"    
+    },
+
+    "format-connected": "󰂱",
+    "tooltip-format-connected": "Bluetooth: {device_alias}"
+  }
+}
+

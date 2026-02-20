@@ -1,0 +1,130 @@
+
+configuration {
+  show-icons: true;
+  sidebar-mode: false;
+  display-drun: "  ";
+  drun-display-format: "{name}";
+}
+
+* {
+
+  font: "JetBrainsMono Nerd Font 15";
+
+  bg:           #0f1115;
+  bg-alt:       #151922;
+  panel:        #12161e;
+  text:         #e7e7e7;
+  text-dim:     #b7bcc6;
+
+  accent:       #7aa2f7;  
+  border:       #2a3140;
+
+  spacing:      10;
+}
+
+
+window {
+  location: northwest;
+  anchor: northwest;
+
+  x-offset: 0px;
+  y-offset: 2px;
+
+  width: 420px;
+  height: 75%;
+
+  background-color: rgba(24, 24, 24, 0.96);
+  border: 2px;
+  border-color: #1793d1;
+  border-radius: 2px;
+}
+
+
+mainbox {
+  orientation: vertical;
+  spacing: @spacing;
+  padding: 14px;
+  background-color: transparent;
+ }
+
+inputbar {
+  background-color: @bg-alt;
+  border: 1px;
+  border-color: transparent;
+  border-radius: 2px;
+  padding: 10px 12px;
+  spacing: 10px;
+
+  children: [ prompt, entry ];
+}
+
+prompt {
+  enabled: true;
+
+  background-color: transparent;
+  text-color: @text-dim;
+
+  padding: 0px;
+}
+
+entry {
+  background-color: transparent;
+  text-color: @text;
+  placeholder: "Search...";
+  placeholder-color: rgba(231,231,231,0.35);
+  cursor: text;
+}
+
+
+listview {
+  background-color: transparent;
+  lines: 18;           
+  dynamic: true;
+  scrollbar: false;
+  spacing: 8px;
+  fixed-height: false;
+}
+
+element {
+  background-color: transparent;
+  text-color: @text;
+  border: 1px;
+  border-color: transparent;
+  border-radius: 2px;
+  padding: 10px 12px;
+}
+
+element-icon {
+  size: 24px;
+  background-color: transparent;
+}
+
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+}
+
+element selected {
+  background-color: #1a2030;
+  border-color: @accent;
+}
+
+element selected normal {
+  text-color: @text;
+}
+
+
+element-text highlight {
+  text-color: @accent;
+  background-color: transparent;
+}
+
+
+message {
+  background-color: transparent;
+}
+textbox {
+  background-color: transparent;
+  text-color: @text;
+}
+

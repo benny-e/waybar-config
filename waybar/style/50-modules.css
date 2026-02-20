@@ -1,0 +1,136 @@
+/* Temperature */
+#temperature {
+  color: @temp_cool;
+  border-bottom: 2px solid @temp_cool;
+}
+#temperature.warning,
+#memory.warning,
+#cpu.warning {
+  color: @warn_fg;
+  border-bottom: 2px solid @warn_fg;
+}
+#temperature.critical,
+#memory.critical,
+#cpu.critical {
+  color: @crit_fg;
+  border-bottom: 2px solid @crit_fg;
+}
+
+/* Memory */
+#memory {
+  color: @cpu_fg;
+  border-bottom: 2px solid @cpu_fg;
+}
+
+/* CPU */
+#cpu {
+  color: @cpu_fg;	
+  border-bottom: 2px solid @cpu_fg;
+}
+
+/* Pulseaudio */
+#pulseaudio {
+  color: @vol_fg;
+  border-bottom: 2px solid @vol_fg;
+}
+
+#pulseaudio.muted {
+   color: @vol_fg_muted;
+   padding-right: 5px;
+   border-bottom: 2px solid currentColor;
+ }
+
+/* Network */
+#network {
+  color: @net_fg;
+  border-bottom: 2px solid @net_fg;
+}
+
+#network.disconnected {
+  color: @crit_fg;
+  border-bottom: 2px solid @crit_fg;
+}
+
+/* Backlight */
+#backlight {
+  color: @backlight_fg;
+  border-bottom: 2px solid @backlight_fg;
+  padding-right: 6px;
+}
+
+/* Disk */
+#disk {
+  color: @disk_fg;
+  border-bottom: 2px solid @disk_fg;
+}
+
+/* Tray */
+#tray { 
+padding-left: 12px;
+padding-right: 0px;
+}
+
+#tray > .passive { -gtk-icon-effect: dim; }
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+/* Battery (base + charging/warning; critical animation in 60-animations.css) */
+#battery {
+  color: @bat_good;
+  border-bottom: 2px solid @bat_good;
+}
+
+#battery.charging.warning,
+#battery.plugged.warning {
+  color: @bat_good;
+  border-bottom: 2px solid @bat_good;
+}
+
+#battery.warning {
+  color: @bat_norm;
+  border-bottom: 2px solid @bat_norm;
+}
+
+/* Clock */
+#clock {
+  background-color: transparent;
+  font-size: 18px;
+  padding-left: 14px;
+  padding-right: 10px;
+  text-shadow: 2px 2px 4px black;
+  color: #ffffff;
+}
+
+
+#bluetooth.off {
+  font-size: 17px;
+  color: @bt_off;
+  border-bottom: 2px solid @bt_off;
+  padding: 0 2px;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 0px;
+}
+
+#bluetooth.on {
+  font-size: 17px;
+  color: @bt_on;
+  border-bottom: 2px solid @bt_on;
+  padding: 0 2px;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 0px;
+}
+
+#bluetooth.connected {
+  font-size: 17px;
+  color: @bt_connected;
+  border-bottom: 2px solid @bt_connected;
+  padding: 0 2px;
+  margin: 0;
+  padding-top: 5px;
+}
+

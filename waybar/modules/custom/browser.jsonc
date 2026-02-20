@@ -1,0 +1,9 @@
+{
+  "custom/browser": {
+    "format": "",
+    "on-click": "brave",
+    "tooltip": false,
+    "icon-size": 32
+  }
+}
+

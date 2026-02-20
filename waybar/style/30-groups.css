@@ -1,0 +1,31 @@
+/* Shared “tray-like” background for most right-side modules */
+#battery,
+#custom-mouse,
+#disk,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#mode,
+#memory,
+#temperature,
+#cpu,
+#clock,
+#idle_inhibitor,
+#bluetooth,
+#custom-vpn,
+#custom-logout,
+#custom-spacer,
+#custom-spacer,
+#custom-clipboard,
+#custom-rightend,
+#custom-leftend
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgba(235, 238, 245, 1);
+  border-radius: 0px;
+  padding-top: 4px;
+  background-color: @trayc;
+}
+
