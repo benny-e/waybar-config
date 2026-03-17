@@ -1,6 +1,6 @@
 {
 	"custom/updates": {
-		"exec": "~/.config/scripts/checkupdates.sh",
+		"exec": "~/.config/waybar/scripts/checkupdates.sh",
 		"return-type": "json",
 		"interval": 3600
 	}
