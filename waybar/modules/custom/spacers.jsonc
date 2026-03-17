@@ -7,14 +7,14 @@
 
 
   "custom/rightend": {
-     "format": " ",
+     "format": "  ",
      "tooltip": false
   },
 
 
 
   "custom/leftend": {
-     "format": " ",
+     "format": "  ",
      "tooltip": false
   }
 }
