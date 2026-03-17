@@ -1,47 +1,40 @@
-# Modular waybar config for hyprland
+
+# Hyprland Waybar Config
+
+Minimal, modular Waybar configuration designed for **Hyprland on Arch Linux**.  
 
 ![Preview](assets/waybar.png)
 
-Waybar configs designed for hyprland  
+## Installation  
 
-## features  
-Custom rofi menus for:  
-VPN  
-Network  
-Launcher/powermenu  
-system info  
+Clone the repository:  
 
-## Requirements
-waybar  
-nerd fonts (I use JetBrainsMono Nerd Font)  
-Network Manager   
-Bluetoothctl  
-blueman  
+```bash
+git clone https://github.com/benny-e/waybar-config.git
+cd waybar-config
+```
 
-This is configured for hyprland, but will work with other WM with some edits  
-I use kitty/brave/thunar which can be changed  
+Make the installer executable:  
 
-## Install
+```bash
+chmod +x install.sh
+```
 
-Copy all included dirs inside of your .config dir.  
-Make scripts executable   
+Run the install script:  
 
+```bash
+./install.sh
 ```
-git clone https://github.com/benny-e/waybar-config.git  
-cd waybar-config 
-```
-Copy files 
-```
-mkdir -p ~/.config/waybar
-```
-Copy Scripts  
-```
-mkdir -p ~/.config/scripts
-cp -r scripts/* ~/.config/scripts/
-chmod +x ~/.config/scripts/*
-```
-Copy rofi themes  
-```
-mkdir -p ~/.config/rofi
-cp -r rofi/* ~/.config/rofi/
-```
+
+## Notes
+
+* Designed for Arch Linux  
+* Intended for use with Hyprland  
+* The install script will:  
+
+  * Install required dependencies 
+  * Backup existing configs  
+  * Copy Waybar and Rofi configs to `~/.config`  
+
+---
+
