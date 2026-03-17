@@ -18,7 +18,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/benny-e/waybar-config.git
-cd YOUR_REPO
+cd waybar-config
 ```
 
 Make the installer executable:
