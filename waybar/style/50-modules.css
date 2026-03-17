@@ -1,148 +1,129 @@
-/* Temperature */
-#temperature {
-  color: @temp_cool;
-  border-bottom: 2px solid @temp_cool;
+#temperature,
+#memory,
+#cpu,
+#pulseaudio,
+#network,
+#backlight,
+#disk,
+#battery,
+#bluetooth {
+	border-bottom: 2px solid currentColor;
 }
+
+#temperature {
+	color: @temp_cool;
+}
+
+#memory,
+#cpu {
+	color: @cpu_fg;
+}
+
 #temperature.warning,
 #memory.warning,
 #cpu.warning {
-  color: @warn_fg;
-  border-bottom: 2px solid @warn_fg;
+	color: @warn_fg;
 }
+
 #temperature.critical,
 #memory.critical,
 #cpu.critical {
-  color: @crit_fg;
-  border-bottom: 2px solid @crit_fg;
+	color: @crit_fg;
 }
 
-/* Memory */
-#memory {
-  color: @cpu_fg;
-  border-bottom: 2px solid @cpu_fg;
-}
-
-/* CPU */
-#cpu {
-  color: @cpu_fg;	
-  border-bottom: 2px solid @cpu_fg;
-}
-
-/* Pulseaudio */
 #pulseaudio {
-  color: @vol_fg;
-  border-bottom: 2px solid @vol_fg;
+	color: @vol_fg;
+	padding-right: 5px;
 }
 
 #pulseaudio.muted {
-   color: @vol_fg_muted;
-   padding-right: 5px;
-   border-bottom: 2px solid currentColor;
- }
+	color: @vol_fg_muted;
+	padding-right: 5px;
+}
 
-/* Network */
 #network {
-  color: @net_fg;
-  border-bottom: 2px solid @net_fg;
+	color: @net_fg;
 }
 
 #network.disconnected {
-  color: @crit_fg;
-  border-bottom: 2px solid @crit_fg;
+	color: @crit_fg;
 }
 
-/* Backlight */
 #backlight {
-  color: @backlight_fg;
-  border-bottom: 2px solid @backlight_fg;
-  padding-right: 6px;
+	color: @backlight_fg;
+	padding-right: 6px;
 }
 
-/* Disk */
 #disk {
-  color: @disk_fg;
-  border-bottom: 2px solid @disk_fg;
+	color: @disk_fg;
 }
 
-/* Tray */
-#tray { 
-padding-left: 12px;
-padding-right: 0px;
+#tray {
+	padding-left: 12px;
+	padding-right: 0;
 }
 
-#tray > .passive { -gtk-icon-effect: dim; }
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
+#tray>.passive {
+	-gtk-icon-effect: dim;
 }
 
-/* Battery (base + charging/warning; critical animation in 60-animations.css) */
+#tray>.needs-attention {
+	-gtk-icon-effect: highlight;
+	background-color: #eb4d4b;
+}
+
 #battery {
-  color: @bat_good;
-  border-bottom: 2px solid @bat_good;
+	color: @bat_good;
 }
 
 #battery.charging.warning,
 #battery.plugged.warning {
-  color: @bat_good;
-  border-bottom: 2px solid @bat_good;
+	color: @bat_good;
 }
 
 #battery.warning {
-  color: @bat_norm;
-  border-bottom: 2px solid @bat_norm;
+	color: @bat_norm;
 }
 
-/* Clock */
 #clock {
-  background-color: transparent;
-  font-size: 18px;
-  padding-left: 14px;
-  padding-right: 10px;
-  text-shadow: 2px 2px 4px black;
-  color: #ffffff;
+	background-color: transparent;
+	font-size: 18px;
+	padding-left: 14px;
+	padding-right: 10px;
+	text-shadow: 2px 2px 4px black;
+	color: #ffffff;
 }
 
 #bluetooth {
-  font-size: 17px;
-  padding: 0 2px;
-  margin: 0;
-  padding-top: 5px;
-  padding-left: 0px;
-
-  color: @bt_on;
-  border-bottom: 2px solid @bt_on;
+	font-size: 17px;
+	padding: 0 2px;
+	padding-top: 5px;
+	padding-left: 0;
+	margin: 0;
+	color: @bt_on;
 }
 
-/* Connected overrides */
 #bluetooth.connected {
-  color: @bt_connected;
-  border-bottom: 2px solid @bt_connected;
+	color: @bt_connected;
 }
 
-/* Powered off overrides */
 #bluetooth.disabled {
-  color: @bt_off;
-  border-bottom: 2px solid @bt_off;
+	color: @bt_off;
 }
-
 
 #idle_inhibitor {
-  padding-top: 0px;
-  color: rgba(255,255,255,0.55);
+	padding-top: 0;
+	color: rgba(255, 255, 255, 0.55);
 }
 
 #idle_inhibitor.activated {
-  color: #4aff00;
-  }
-
-#bluetooth:hover,
-#audio:hover, 
-#network:hover,
-#idle_inhibitor:hover {
-   border-radius: 0px;
-   text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+	color: #4aff00;
 }
 
-
+#bluetooth:hover,
+#pulseaudio:hover,
+#network:hover,
+#idle_inhibitor:hover {
+	border-radius: 0;
+	text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+}
