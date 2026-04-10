@@ -90,6 +90,7 @@
 #clock {
 	background-color: transparent;
 	font-size: 18px;
+	padding-bottom: 4px;
 	padding-left: 14px;
 	padding-right: 10px;
 	text-shadow: 2px 2px 4px black;

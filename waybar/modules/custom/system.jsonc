@@ -1,6 +1,6 @@
 {
 	"custom/system": {
-		"exec": "uname -r | sed -E 's/-arch[0-9]+-[0-9]+/-arch/'",
+		"exec": "uname -r | cut -d- -f1",
 		"interval": 3600,
 		"format": "<span rise='500' size='12000'></span> {}",
 		"tooltip": false,

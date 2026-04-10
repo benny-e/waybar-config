@@ -93,8 +93,10 @@
 
 #custom-updates {
 	padding-left: 10px;
-	padding-right: 11px;
+	padding-right: 12px;
 	border-radius: 2px;
+	padding-top: 2px;
+	font-size: 16;
 }
 
 #custom-updates.medium {
